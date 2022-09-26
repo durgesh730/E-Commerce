@@ -1,0 +1,93 @@
+.iteamheading{
+    margin-top: 15px;
+    background-color: #271033;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5% 5%;
+    box-shadow: 0px 0px 5px 0px #888888;
+}
+
+.rows div a{
+     text-decoration: none;
+     background-color: white ;
+     color: black;
+     padding: 10px 15px;
+     font-size: 16px;
+     border-radius: 5px;
+}
+
+.rows div span{
+     font-size: 25px;
+     font-weight: 500;
+     color: white;
+}
+.imageitem{
+    display: flex;
+}
+.imagetext{
+     display: block;
+}
+
+.imageitem{
+    background-color: #271033;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+}
+
+.imagetext{
+     margin: .5%;
+     padding-top: 1.2%;
+     padding-bottom: 1.2%;
+     padding-right: 2%;
+     padding-left: 2%;
+     background-color:white;
+     box-shadow: 0px 0px 4px 0px #888888;
+     color: #271033;
+     text-align: center;
+     border-radius: 5px;
+     font-size: 16px;
+}
+
+.imagetext div{
+    padding-top: 2%;
+}
+
+.imagetext div img{
+    border: none;
+}
+
+.imagetext div img:hover{
+    transition: 0.4s;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.imagetext div span{
+    padding-top: 1.2%;
+  }
+
+.imagetext div a{
+  text-decoration: none;
+}
+
+.imagetext div a:hover{
+   color: blue;
+}
+
+.brand a{
+    color: black;
+    opacity: .7;
+}
+
+.firstimage a{
+    color: tomato;
+}
+.view:hover{
+      transition: 0.4s;
+      transform: scale3d(1.1, 1.1, 1.1);
+}
+.view a:hover{
+    color: tomato;
+}

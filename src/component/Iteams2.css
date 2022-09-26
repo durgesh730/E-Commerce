@@ -1,0 +1,87 @@
+.iteam2heading{
+    display: none;
+    margin-top: 15px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888888;
+}
+
+.row div a{
+     text-decoration: none;
+     background-color: #271033 ;
+     color: white;
+     padding: 10px 15px;
+     font-size: 16px;
+     border-radius: 5px;
+}
+
+.row div span{
+     font-size: 25px;
+     font-weight: 500;
+}
+.imageitem2{
+    display: flex;
+}
+.imagetext2{
+     display: block;
+}
+
+.imageitem2{
+    display: none;
+    background-color: white;
+    padding-left: .5%;
+    margin-bottom: 2%;
+}
+.imagetext2{
+     margin: .5%;
+     padding-top: 1.2%;
+     padding-bottom: 1.2%;
+     padding-right: 2%;
+     padding-left: 2%;
+     background-color:white;
+     box-shadow: 0px 0px 4px 0px #888888;
+     color: #271033;
+     text-align: center;
+     border-radius: 5px;
+     font-size: 16px;
+}
+
+.imagetext2 div{
+    padding-top: 2%;
+}
+
+.imagetext2 div img{
+    border: none;
+}
+
+.imagetext2 div img:hover{
+    transition: 0.4s;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.imagetext2 div span{
+    padding-top: 1.2%;
+  }
+
+.imagetext2 div a{
+  text-decoration: none;
+   color:#271033;
+}
+
+.imagetext2 div a:hover{
+   color: tomato;
+}
+
+@media screen and (max-width:1000px) {
+    .iteam2heading{
+       display: block;
+    }
+    .imageitem2{
+        display:flex;
+    }
+}
