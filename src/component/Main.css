@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Pacifico&family=Roboto+Condensed&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.navigation{
+  background-color: #271033;
+}
+
+.container{
+  padding-top:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+  .container{
+     padding: 8px 20px;
+  }
+}   
+
+.logo{
+  margin-top: -5px;
+  color: white;
+  padding-right: 5%;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.container input{
+  padding-top: 1%;
+   padding-left: 1%;
+   width:50%;
+   height:4%;
+   padding-bottom: 8px;
+   border-radius: 3px;
+   border: none;
+   font-size: 15px;
+}
+
+.container button{
+  margin-left: -30px;
+  margin-bottom:2% ;
+  width: 0%;
+  background-color:transparent;
+  border: none;
+  padding-right: 2px;
+  padding-top: 2px;
+}
+
+.searchphone {
+  display: none;
+  padding-left: 9%;
+}
+
+.searchphone input{
+  padding-top: 1%;
+   width:90%;
+   height:4%;
+   padding-bottom: 8px;
+   border-radius: 3px;
+   border: none;
+   font-size: 15px;
+}
+
+.searchphone button{
+  margin-left: -30px;
+  margin-bottom:2% ;
+  background-color:transparent;
+  border: none;
+  padding-right: 2px;
+  padding-top: 2px;
+}
+
+
+.account{
+   margin-top: -2px;
+   padding-left: 6%;
+   font-size: 16px;
+}
+
+@media screen and (max-width:800px) {
+        .searchphone{
+          display:block;
+        }
+      .account{
+          display:none;
+      }
+      .container input{
+         display: none;
+         
+      }
+      
+      .container button{
+        display: none;
+      }
+
+      .searchphone input{
+         padding-left: 1%;
+      }
+
+      .logo{
+        padding-right: 20%;
+      }
+}
+
+.more{
+  margin-top: -2px;
+  padding-left: 1%;
+  font-size: 16px;
+}
+
+.dropdown-menu{
+  font-size: 16px;
+}
+
+.dropdown-item:hover{
+    color:rgb(27, 145, 255) ;
+}
+
+.icon{
+  display: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left:1%;
+  cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+  .more{
+     display: none;
+  }
+  .icon{
+    display:block;
+    padding-left:20%;
+  }
+}
+
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 0px solid white;
+  box-shadow: 0px .2px 5px 0px rgb(126, 126, 126) ;
+  padding: .5% 0%;
+  
+}
+.container1 li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.container1 li a{
+  color: black;
+  font-size: 16px;
+    text-decoration: none;
+}
+
+.container1 li a:hover{
+    color:rgb(27, 145, 255);
+}
+
+@media screen and (max-width:450px) {
+  .container1 li a{
+     font-size: 14px;
+  }
+  .container1{
+     padding-top:1%;
+  }
+}
+
+.grocery img{
+  width: 50%;
+}
+
+@media screen and (max-width:800px) {
+    .grocery{
+      display: none;
+    }
+}
+
+.fashion{
+  margin-top:-8px ;
+}
+
+.fashion img{
+  width: 50%;
+}
+
+
+.mobile img{
+  width: 50%;
+}
+
+.electronics{
+  margin-top:-10px ;
+}
+
+.electronics img{
+  width: 50%;
+}
+
+.home{
+  margin-top:-4px ;
+}
+
+.home img{
+  width: 50%;
+}
+
+@media screen and (max-width:450px) {
+    .mobile{
+        display: none;
+     }
+}
+
+.appliances img{
+  width: 50%;
+}
+
+@media screen and (max-width:700px) {
+    .appliances{
+      display: none;
+    }
+}
+
+.offers img{
+  width: 50%;
+}
+
+@media screen and (max-width:900px) {
+     .offers{
+        display: none;
+     }
+}
+
+
+/* css for the sidenav  */
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* sidenav ka css yaha se start hai */
+
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#271033;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+@media screen and (max-width:813px) {
+  .sidenav {
+    display: block;
+  }
+}
+
+.sidenav a {
+  padding: 4px 8px 8px 40px;
+  text-decoration: none;
+  font-size: 16px;
+  color:white;
+  opacity: .8;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: tomato;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+

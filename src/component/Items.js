@@ -1,14 +1,12 @@
 import React from 'react'
-
-// import pic from "./../flipkat_images/Top Offers.png"
-// import img from "./../flipkat_images/Grocery.webp"
-// import photo from "./../flipkat_images/Mobiles.webp"
-// import pimg from "./../flipkat_images/Electronics.webp"
-// import Rimg from "./../flipkat_images/Fashion.webp"
-// import Simg from "./../flipkat_images/Home.webp"
-// import Mimg from "./../flipkat_images/Appliances.webp"
+import { Link } from 'react-router-dom'
 
 export default function Items(props) {
+
+   const handleClick=()=>{
+      window.open("./Product");
+    }
+
   return (
          <>
                <div className="iteamheading">
@@ -17,7 +15,7 @@ export default function Items(props) {
                              <span>{props.topheading}</span>
                           </div>
                           <div className='view'>
-                               <a href='#'>View All</a>
+                               <Link to={props.Pages}>View All</Link>
                           </div>
                     </div>
                </div>
@@ -25,17 +23,17 @@ export default function Items(props) {
                <div className='imageitem'>
 
                   <div className='imagetext'>
-                    <div  >
-                    <img src={props.p} alt="..." class="img-thumbnail"/></div>
+                    <div>
+                       <img onClick={handleClick} src={props.p} alt="..." class="img-thumbnail"/></div>
 
-                    <div >
-                    <span>{props.itemName}</span></div>
+                    <div>
+                    <span onClick={handleClick}>{props.itemName}</span></div>
 
                     <div className='firstimage'>
-                    <a href='#'>{props.itemprice}</a></div>
+                    <a onClick={handleClick} href='#'>{props.itemprice}</a></div>
                      
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a onClick={handleClick} href='#'>{props.brandName}</a></div>
 
                   </div>
                   
@@ -43,13 +41,14 @@ export default function Items(props) {
                   <div className='imagetext'>
                     <div >
                     <img src={props.k} alt="..." class="img-thumbnail"/></div>
+                    
                     <div>
                     <span>{props.itemName2}</span></div>
                     <div  className='firstimage'>
                     <a href='#'>{props.itemprice2}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a>{props.brandName}</a></div>
                   </div>
 
 
@@ -62,7 +61,7 @@ export default function Items(props) {
                     <a href='#'>{props.itemprice3}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a >{props.brandName}</a></div>
 
                   </div>
 
@@ -76,7 +75,7 @@ export default function Items(props) {
                     <a href='#'>{props.itemprice4}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a>{props.brandName}</a></div>
                   </div>
 
                   <div className='imagetext'>
@@ -89,7 +88,7 @@ export default function Items(props) {
                     <a href='#'>{props.itemprice5}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a >{props.brandName}</a></div>
                   </div>
 
                   <div className='imagetext'>
@@ -101,7 +100,7 @@ export default function Items(props) {
                     <a href='#'>{props.itemprice6}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a>{props.brandName}</a></div>
                   </div>
 
                   <div className='imagetext'>
@@ -114,7 +113,7 @@ export default function Items(props) {
                     <a href='#'>{props.itemprice7}</a></div>
 
                     <div className='brand'>
-                    <a href='#'>{props.brandName}</a></div>
+                    <a>{props.brandName}</a></div>
                   </div>
                     
                </div>

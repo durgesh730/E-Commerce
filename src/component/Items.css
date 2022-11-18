@@ -79,6 +79,7 @@
 .brand a{
     color: black;
     opacity: .7;
+    cursor: pointer;
 }
 
 .firstimage a{
@@ -90,4 +91,30 @@
 }
 .view a:hover{
     color: tomato;
+}
+
+.Topheading{
+    padding-top:1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.offers2{
+    padding-right: 1%;
+    padding-top: .3%;
+}
+
+.grocery2{
+    padding-top: .3%;
+}
+
+.mobile2{
+    padding-left: 1%;
+    padding-top: .3%;
+}
+
+.appliances2{
+    padding-left: 1%;
+    padding-top: .3%; 
 }
